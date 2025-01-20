@@ -113,9 +113,9 @@ function Header() {
           onClick={() => setOpen(!open)}
         >
           {!open ? (
-            <RxHamburgerMenu className="stroke-2 md:stroke-current" />
+            <RxHamburgerMenu className="stroke-1 md:stroke-current cursor-pointer" />
           ) : (
-            <IoMdClose className="stroke-2 md:stroke-current" />
+            <IoMdClose className="stroke-2 md:stroke-current cursor-pointer" />
           )}
         </div>
 

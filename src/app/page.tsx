@@ -4,8 +4,6 @@ import ContactsSection from "@/components/ContactsSection";
 import Email from "@/components/Email";
 import Experience from "@/components/Experience";
 import Home from "@/components/Home";
-import IconContacts from "@/components/IconContacts";
-
 import Proyects from "@/components/Proyects";
 import Skills from "@/components/Skills";
 

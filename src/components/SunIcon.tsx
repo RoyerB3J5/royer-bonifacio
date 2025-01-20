@@ -1,4 +1,6 @@
-export const SunIcon = (props: any) => {
+import React from "react";
+type SunIconProps = React.SVGProps<SVGSVGElement>;
+export const SunIcon = (props: SunIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
