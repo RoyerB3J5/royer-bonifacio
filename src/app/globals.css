@@ -2,20 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .animate-once {
+    animation: wave 1s ease-in-out;
   }
+  .hover\\:animate-once:hover {
+    animation: wave 1s ease-in-out;
+  }
+  .li-arrow {
+    position: relative;
+    padding-left: 1.5rem; /* Ajusta este valor según sea necesario */
+  }
+  .li-arrow::before {
+    content: '➤'; /* Puedes cambiar este símbolo por cualquier otro que prefieras */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--tw-text-opacity, #5CAF9F); /* Color de la flecha */
+  }
+
+
+
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
