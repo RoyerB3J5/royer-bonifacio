@@ -1,4 +1,6 @@
-export const MoonIcon = (props: any) => {
+import React from "react";
+type MoonIconProps = React.SVGProps<SVGSVGElement>;
+export const MoonIcon = (props: MoonIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
