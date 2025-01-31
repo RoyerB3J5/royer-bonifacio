@@ -4,8 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-
+import { Analytics } from "@vercel/analytics/next";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -31,11 +30,11 @@ export default function RootLayout({
         className={`${firaCode.className} ${geistMono.variable} antialiased  relative overflow-x-hidden`}
       >
         <Providers>
-          <Header/>
-          {children} 
-          <Footer/> 
+          <Header />
+          {children}
+          <Analytics />
+          <Footer />
         </Providers>
-        
       </body>
     </html>
   );
