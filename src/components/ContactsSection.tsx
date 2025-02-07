@@ -12,10 +12,10 @@ function ContactsSection() {
       </div>
       <div className="w-full flex  flex-col jsutify-center items-center gap-9">
         <a
-          href="mailto:royer.boni13@gmail.com"
+          href="mailto:rbcode1606@gmail.com"
           className=" transition duration-200 ease-in-out  hover:text-background px-2 py-2 shadow-email-dark dark:shadow-email hover:shadow-email-hover-dark hover:dark:shadow-email-hover  "
         >
-          royer.boni13@gmail.com
+          rbcode1606@gmail.com
         </a>
         <IconContacts />
       </div>
