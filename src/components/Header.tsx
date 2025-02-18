@@ -3,7 +3,11 @@ import Image from "next/image";
 import { getDictionary } from "@/app/i18n/dictionary";
 import ClientHeader from "./ClientHeader";
 
-async function Header({ params }: { params: { lang: "en" | "es" } }) {
+interface HeaderProps {
+  params: { lang: "en" | "es" };
+}
+
+async function Header({ params }: HeaderProps) {
   const t = await getDictionary(params.lang);
 
   return (
