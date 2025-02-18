@@ -1,7 +1,12 @@
 import IconContacts from "./IconContacts";
 import SectionHeader from "./SectionHeader";
-
-function ContactsSection({t}:{t:any}) {
+interface Header {
+  sobremi: string;
+  experiencia: string;
+  proyectos: string;
+  contacto: string;
+}
+function ContactsSection({t}:{t:Header}) {
   return (
     <section
       id="contacts"
