@@ -9,7 +9,6 @@ async function Header({ params }: { params: { lang: "en" | "es" } }) {
   return (
     <ClientHeader
       t={t.header}
-      lang={params.lang}
       logo={<Image src={Logo} alt="Logo RB" width={40} height={40} className="size-10 lg:size-11" />}
     />
   );

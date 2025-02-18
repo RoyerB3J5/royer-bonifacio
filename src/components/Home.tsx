@@ -1,7 +1,13 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-function Home({t}:{t:any}) {
+interface Home {
+  titulo: string;
+  sub1: string;
+  sub2: string;
+  boton: string;
+}
+function Home({t}:{t:Home}) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {

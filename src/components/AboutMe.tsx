@@ -1,10 +1,17 @@
 
 import SectionHeader from "./SectionHeader";
-
-async function AboutMe({
+interface SobreMi {
+  titulo: string;
+  intro1: string;
+  intro2: string;
+  parr2_1: string;
+  parr2_2: string;
+  parr3: string;
+}
+function AboutMe({
   t
 }: {
-  t: any
+  t: SobreMi
 }) {
 
   return (

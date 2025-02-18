@@ -1,10 +1,16 @@
-import { getDictionary } from "@/app/i18n/dictionary";
 import SectionHeader from "./SectionHeader";
-
-async function Experience({
+interface Experience {
+  titulo: string;
+  parr1: string;
+  parr2: string;
+  parr3: string;
+  parr4: string;
+  parr5: string;
+}
+function Experience({
   t
 }:{
-  t: any}
+  t: Experience}
 ) {
   return (
     <section

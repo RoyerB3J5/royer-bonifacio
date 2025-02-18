@@ -1,12 +1,15 @@
-import { getDictionary } from "@/app/i18n/dictionary"
 import SectionHeader from "./SectionHeader"
 import SkillsItme from "./SkillsItem"
 
-
-async function Skills({
+interface Skills {
+  title1: string;
+  title2: string;
+  title3: string;
+}
+ function Skills({
   t
 }:{
-  t: any
+  t: Skills
 }) {
   const data = [
     {

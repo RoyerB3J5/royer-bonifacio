@@ -4,14 +4,17 @@ import ThemeSwitch from "./ThemeSwitch";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import IconContacts from "./IconContacts";
-
+interface Header {
+  sobremi: string;
+  experiencia: string;
+  proyectos: string;
+  contacto: string;
+}
 export default function ClientHeader({
   t,
-  lang,
   logo,
 }: {
-  t: any;
-  lang: "en" | "es";
+  t: Header;
   logo: React.ReactNode;
 }) {
   const [open, setOpen] = useState(false);

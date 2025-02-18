@@ -2,12 +2,24 @@ import Image from "next/image";
 import SectionHeader from "./SectionHeader";
 import { FiGithub } from "react-icons/fi";
 import InternetIcon from "./InternetIcon";
-import { getDictionary } from "@/app/i18n/dictionary";
 
-async function Proyects({
+interface Project {
+  titulo: string;
+  parr: string;
+}
+
+interface Projects {
+  titulo: string;
+  cafeteria: Project;
+  hotel: Project;
+  diodos: Project;
+  carwash: Project;
+  ciclo: Project;
+}
+function Proyects({
   t
 }:{
-  t: any
+  t: Projects
 }) {
  
   return (
