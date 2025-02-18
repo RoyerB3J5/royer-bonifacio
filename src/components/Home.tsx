@@ -14,7 +14,7 @@ function Home() {
   return (
     <section
       id="home"
-      className="h-screen w-full lg:w-2/3 flex flex-col justify-center items-start gap-16 lg:gap-9  px-9 lg:px-16 "
+      className="h-screen w-full lg:w-2/3 flex flex-col justify-center items-start gap-16 lg:gap-9 px-9 lg:px-16 "
     >
       <div className="flex justify-center items-center gap-3">
         <h1 className="text-[1.75rem] lg:text-h1">Hola!</h1>

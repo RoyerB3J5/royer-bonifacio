@@ -23,7 +23,8 @@ function Skills() {
         "TailwindCSS",
         "NextUI",
         "Node.js",
-        "Django"
+        "Django",
+        "jQuery"
       ]
     },
     {

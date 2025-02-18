@@ -9,7 +9,7 @@ function AboutMe() {
       <div className="w-full lg:flex-1 flex-col items-center gap-6">
         <SectionHeader titulo="sobre-mi" />
       </div>
-      <div className="w-full lg:flex-1 flex flex-col gap-5 py-3">
+      <div className="w-full lg:flex-1 flex flex-col gap-7 py-3">
         <p>
           Futuro Ingeniero Mecatrónico de la{" "}
           <span className="dark:text-primary-ligth text-primary-dark  font-semibold">
