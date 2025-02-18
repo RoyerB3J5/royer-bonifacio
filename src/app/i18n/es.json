@@ -1,0 +1,60 @@
+{
+  "home": {
+    "titulo": "Hola!",
+    "sub1": "Soy",
+    "sub2": ", desarrollador front-end junior enfocado en construir aplicaciones web de alto rendimiento.",
+    "boton":"Mira mi CV"
+  },
+  "sobreMi":{
+    "titulo":"sobre-mi",
+    "intro1": "Futuro Ingeniero Mecatrónico de la",
+    "intro2" : ", apasionado por la tecnología y la programación.",
+    "parr2_1": "Actualmente, me especializo en el desarrollo frontend con conocimiento de backend, tengo experiencia en la creación de aplicaciones web modernas utilizando tecnologías como",
+    "parr2_2":", entre otras. Me interesa combinar mis conocimientos en ingeniería y programación para diseñar soluciones innovadoras y eficientes",
+    "parr3": "Me esfuerzo por mantenerme actualizado en las últimas tendencias tecnológicas y por mejorar mis habilidades, buscando destacar en el ámbito del desarrollo web y enfrentar nuevos retos que impulsen mi crecimiento profesional."
+  },
+  "skills":{
+    
+    "title1": "LENGUAJES",
+    "title2": "FRAMEWORKS",
+    "title3": "HERRAMIENTAS"
+  },
+  "experience":{
+    "titulo": "experiencia",
+    "parr1": "Enero 2024 - Presente",
+    "parr2": "Desarrollo de sistemas de gestión para carwash y hoteles,optimizando operaciones y mejorando la experiencia del usuario con interfaces fáciles de usar.",
+    "parr3":"Páginas web dinámicas presentadas en la universidad, utilizando para ofrecer soluciones modernas y escalables.",
+    "parr4":"Integración de backend para implementar funcionalidades de bases de datos, autenticación de usuarios y la conexión con APIs externas.",
+    "parr5":"Diseño de esquemas de base de datos para almacenar información de clientes, reservas y servicios, y manejo de consultas básicas."
+  },
+  "projects":{
+    "titulo":"proyectos",
+    "cafeteria":{
+      "titulo":"Cafetería - Landing Page",
+      "parr": "Diseñé una landing page atractiva y moderna para una cafetería, destacando su ambiente acogedor y menú artesanal, optimizada para dispositivos móviles."
+    },
+    "hotel":{
+      "titulo":"Administrador de Hotel",
+      "parr": "Sistema de administración de hotel, con registro de usuarios, distribucion de habitaciones y reservar."
+    },
+    "diodos":{
+      "titulo":"Biblioteca de Diodos",
+      "parr": "Buscador de diodos que apartir de un formulario con preguntas determinadas hace la busqueda, presentando su informacion y tiene una seccion para observar todos los diodos de la db."
+    },
+    "carwash":{
+      "titulo":"Administrador de Carwash",
+      "parr": "Sistema que permite tener el control de los autos que estan siendo lavados en timepo real,tener informacion sobre clientes pasados y configurar los servicios ofrecidos."
+    },
+    "ciclo":{
+      "titulo":"Ciclo de Brayton",
+      "parr": "Pagina que permite calcular parametros de salida en un ciclo de brayton, asi mismo como obtener sus graficas de comportamiento."
+    }
+  },
+  "header":{
+    "sobremi":"sobre mi",
+    "experiencia": "experiencia",
+    "proyectos":"proyectos",
+    "contacto":"contactos"
+  }
+
+}

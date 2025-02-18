@@ -1,14 +1,14 @@
 import IconContacts from "./IconContacts";
 import SectionHeader from "./SectionHeader";
 
-function ContactsSection() {
+function ContactsSection({t}:{t:any}) {
   return (
     <section
       id="contacts"
       className="px-9 lg:px-16 lg:hidden flex flex-col lg:flex-row justify-center items-start lg:py-16 gap-8 mb-5 lg:mb-0"
     >
       <div className="w-full  flex  flex-col items-center gap-6 ">
-        <SectionHeader titulo="contactos" />
+        <SectionHeader titulo={t.contacto} />
       </div>
       <div className="w-full flex  flex-col jsutify-center items-center gap-9">
         <a

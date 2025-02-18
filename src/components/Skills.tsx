@@ -1,11 +1,16 @@
+import { getDictionary } from "@/app/i18n/dictionary"
 import SectionHeader from "./SectionHeader"
 import SkillsItme from "./SkillsItem"
 
 
-function Skills() {
+async function Skills({
+  t
+}:{
+  t: any
+}) {
   const data = [
     {
-      title: "LENGUAJES",
+      title: t.title1,
       items: [
         "JavaScript (ES6)",
         "TypeScript",
@@ -16,7 +21,7 @@ function Skills() {
       ]
     },
     {
-      title: "FRAMEWORKS",
+      title: t.title2,
       items: [
         "React",
         "Next.js",
@@ -28,7 +33,7 @@ function Skills() {
       ]
     },
     {
-      title: "HERRAMIENTAS",
+      title: t.title3,
       items: [
         "GitHub",
         "Postman",

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-function Home() {
+function Home({t}:{t:any}) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -17,7 +17,7 @@ function Home() {
       className="h-screen w-full lg:w-2/3 flex flex-col justify-center items-start gap-16 lg:gap-9 px-9 lg:px-16 "
     >
       <div className="flex justify-center items-center gap-3">
-        <h1 className="text-[1.75rem] lg:text-h1">Hola!</h1>
+        <h1 className="text-[1.75rem] lg:text-h1">{t.titulo}</h1>
         <div
           className={`cursor-pointer ${isHovered ? "animate-wave" : ""}`}
           onMouseEnter={handleMouseEnter}
@@ -32,12 +32,11 @@ function Home() {
         </div>
       </div>
       <h2 className="text-[1.75rem] lg:text-h1">
-        Soy{" "}
+        {t.sub1}{" "}
         <span className="font-bold text-primary-dark dark:text-primary-ligth">
           Royer Bonifacio Julian
         </span>
-        , desarrollador front-end junior enfocado en construir aplicaciones web
-        de alto rendimiento.
+        {t.sub2}
       </h2>
       <h3 className="flex justify-start items-center gap-3 text-[1.25rm]">
         <Image
@@ -53,7 +52,7 @@ function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Mira mi CV
+            {t.boton}
           </a>
         </span>
       </h3>

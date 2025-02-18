@@ -2,26 +2,30 @@ import Image from "next/image";
 import SectionHeader from "./SectionHeader";
 import { FiGithub } from "react-icons/fi";
 import InternetIcon from "./InternetIcon";
+import { getDictionary } from "@/app/i18n/dictionary";
 
-function Proyects() {
+async function Proyects({
+  t
+}:{
+  t: any
+}) {
+ 
   return (
     <section
       id="proyects"
       className="px-9 lg:px-16 flex flex-col justify-start items-start  py-16 gap-16 lg:gap-8 "
     >
       <div className="w-full lg:w-1/2 flex  flex-col items-center gap-6 ">
-        <SectionHeader titulo="proyectos" />
+        <SectionHeader titulo={t.titulo} />
       </div>
       <div className="border-b-2 border-t-2 rounded-md md:border-0 border-primary-dark dark:border-primary-ligth relative w-full px-7 sm:px-2 py-10 flex flex-col md:flex-row justify-around items-center gap-8 lg:gap-20">
         <div className="flex flex-col justify-center items-start relative z-20 gap-6 w-full md:w-auto">
           <h3 className="text-[1.4rem] font-medium hover:text-primary-dark hover:dark:text-primary-ligth cursor-pointer transition-all">
-            Cafetería - Landing Page
+            {t.cafeteria.titulo}
           </h3>
           <div className="shadow-sm shadow-primary-dark dark:shadow-primary-ligth py-4 px-4 md:w-[400px] text-start rounded-md w-full">
             <p>
-              Diseñé una landing page atractiva y moderna para una cafetería,
-              destacando su ambiente acogedor y menú artesanal, optimizada para
-              dispositivos móviles.
+              {t.cafeteria.parr}
             </p>
           </div>
 
@@ -69,12 +73,11 @@ function Proyects() {
         </div>
         <div className="flex flex-col justify-center items-end relative z-20 gap-6 w-full md:w-auto">
           <h3 className="text-[1.4rem] font-medium hover:text-primary-dark hover:dark:text-primary-ligth cursor-pointer transition-all">
-            Administrador de Hotel
+            {t.hotel.titulo}
           </h3>
           <div className="shadow-sm shadow-primary-dark dark:shadow-primary-ligth py-4 px-4 md:w-[400px] text-end rounded-md w-full">
             <p>
-              Sistema de administración de hotel, con registro de usuarios,
-              distribucion de habitaciones y reservar.
+              {t.hotel.parr}
             </p>
           </div>
 
@@ -97,13 +100,11 @@ function Proyects() {
       <div className="border-b-2 border-t-2 rounded-md md:border-0 border-primary-dark dark:border-primary-ligth relative w-full px-7 sm:px-2 py-10 flex flex-col md:flex-row justify-around items-center gap-8 lg:gap-20">
         <div  className="flex flex-col justify-center items-start relative z-20 gap-6 w-full md:w-auto">
           <h3 className="text-[1.4rem] font-medium hover:text-primary-dark hover:dark:text-primary-ligth cursor-pointer transition-all">
-            Biblioteca de Diodos
+            {t.diodos.titulo}
           </h3>
           <div className="shadow-sm shadow-primary-dark dark:shadow-primary-ligth py-4 px-4 md:w-[400px] text-start rounded-md w-full">
             <p>
-              Buscador de diodos que apartir de un formulario con preguntas
-              determinadas hace la busqueda, presentando su informacion y tiene
-              una seccion para observar todos los diodos de la db.
+              {t.diodos.parr}
             </p>
           </div>
 
@@ -152,13 +153,11 @@ function Proyects() {
         </div>
         <div className="flex flex-col justify-center items-end relative z-20 gap-6 w-full md:w-auto">
           <h3 className="text-[1.4rem] font-medium hover:text-primary-dark hover:dark:text-primary-ligth cursor-pointer transition-all">
-            Administrador de Carwash
+            {t.carwash.titulo}
           </h3>
           <div className="shadow-sm shadow-primary-dark dark:shadow-primary-ligth py-4 px-4 md:w-[400px] text-end rounded-md w-full">
             <p>
-              Sistema que permite tener el control de los autos que estan siendo
-              lavados en timepo real,tener informacion sobre clientes pasados y
-              configurar los servicios ofrecidos .
+              {t.carwash.parr}
             </p>
           </div>
 
@@ -182,12 +181,11 @@ function Proyects() {
       <div className="border-b-2 border-t-2 rounded-md md:border-0 border-primary-dark dark:border-primary-ligth relative w-full px-7 sm:px-2 py-10 flex flex-col md:flex-row justify-around items-center gap-8 lg:gap-20">
         <div className="flex flex-col justify-center items-start relative z-20 gap-6 w-full md:w-auto">
           <h3 className="text-[1.4rem] font-medium hover:text-primary-dark hover:dark:text-primary-ligth cursor-pointer transition-all">
-            Ciclo de Brayton
+            {t.ciclo.titulo}
           </h3>
           <div className="shadow-sm shadow-primary-dark dark:shadow-primary-ligth py-4 px-4 md:w-[400px] text-start rounded-md w-full">
             <p>
-              Pagina que permite calcular parametros de salida en un ciclo de
-              brayton, asi mismo como obtener sus graficas de comportamiento.
+              {t.ciclo.parr}
             </p>
           </div>
 

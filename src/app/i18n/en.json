@@ -1,0 +1,58 @@
+{
+  "home": {
+    "titulo": "Hello!",
+    "sub1": "I am",
+    "sub2": ", a junior front-end developer focused on building high-performance web applications.",
+    "boton": "Check out my resume"
+  },
+  "sobreMi": {
+    "titulo": "about-me",
+    "intro1": "Future Mechatronics Engineer from",
+    "intro2": ", passionate about technology and programming.",
+    "parr2_1": "Currently, I specialize in frontend development with backend knowledge, having experience in creating modern web applications using technologies such as",
+    "parr2_2": ", among others. I am interested in combining my knowledge in engineering and programming to design innovative and efficient solutions.",
+    "parr3": "I strive to stay updated on the latest technological trends and to improve my skills, seeking to excel in the field of web development and take on new challenges that drive my professional growth."
+  },
+  "skills": {
+    "title1": "LANGUAGES",
+    "title2": "FRAMEWORKS",
+    "title3": "TOOLS"
+  },
+  "experience": {
+    "titulo": "experience",
+    "parr1": "January 2024 - Present",
+    "parr2": "Development of management systems for car washes and hotels, optimizing operations and improving user experience with easy-to-use interfaces.",
+    "parr3": "Dynamic web pages presented at the university, using to offer modern and scalable solutions.",
+    "parr4": "Backend integration to implement database functionalities, user authentication, and connection with external APIs.",
+    "parr5": "Design of database schemas to store customer information, reservations, and services, and handling basic queries."
+  },
+  "projects": {
+    "titulo": "projects",
+    "cafeteria": {
+      "titulo": "Cafeteria - Landing Page",
+      "parr": "I designed an attractive and modern landing page for a cafeteria, highlighting its cozy atmosphere and artisanal menu, optimized for mobile devices."
+    },
+    "hotel": {
+      "titulo": "Hotel Manager",
+      "parr": "Hotel management system, with user registration, room distribution, and booking."
+    },
+    "diodos": {
+      "titulo": "Diode Library",
+      "parr": "Diode search engine that, based on a form with specific questions, performs the search, presenting its information and has a section to view all the diodes in the database."
+    },
+    "carwash": {
+      "titulo": "Car Wash Manager",
+      "parr": "System that allows real-time control of cars being washed, information about past customers, and configuration of offered services."
+    },
+    "ciclo": {
+      "titulo": "Brayton Cycle",
+      "parr": "Page that allows calculating output parameters in a Brayton cycle, as well as obtaining its behavior graphs."
+    }
+  },
+  "header":{
+    "sobremi":"about me",
+    "experiencia": "experience",
+    "proyectos":"projects",
+    "contacto":"contacts"
+  }
+}
