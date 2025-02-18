@@ -25,9 +25,10 @@ export default async function RootLayout({
   params
 }: Readonly<{
   children: React.ReactNode;
-  params: { lang:"en" | "es"}
+  params: Promise<{ lang: "en" | "es" }>
 }>) {
-  const {lang} = params
+  const resolvedParams = await params;
+  const { lang } = resolvedParams;
   return (
     <html lang={lang} className=" scroll-smooth">
       <body

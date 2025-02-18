@@ -11,9 +11,10 @@ import { getDictionary } from "../i18n/dictionary";
 export default async function Init({
   params
 }:{
-  params: { lang: "en" | "es" }
+  params: Promise<{ lang: "en" | "es" }>
 }) {
-  const { lang } = params;
+  const resolvedParams = await params;
+  const { lang } = resolvedParams;
   const t = await getDictionary(lang);
   return (
     <main className="w-screen px-6 lg:px-24">
