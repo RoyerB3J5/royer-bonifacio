@@ -13,7 +13,7 @@ export default async function Init({
 }:{
   params: { lang: "en" | "es" }
 }) {
-  const lang = params.lang;
+  const { lang } = params;
   const t = await getDictionary(lang);
   return (
     <main className="w-screen px-6 lg:px-24">
