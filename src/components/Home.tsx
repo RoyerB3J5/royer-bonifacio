@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import Hand from "../../public/emojis/wave.png";
+import Finger from "../../public/emojis/pointright.png";
 interface Home {
   titulo: string;
   sub1: string;
@@ -30,7 +32,7 @@ function Home({t}:{t:Home}) {
           onMouseLeave={handleMouseLeave}
         >
           <Image
-            src="/emojis/wave.png"
+            src={Hand}
             width={35}
             height={35}
             alt="emoji manito"
@@ -46,7 +48,7 @@ function Home({t}:{t:Home}) {
       </h2>
       <h3 className="flex justify-start items-center gap-3 text-[1.25rm]">
         <Image
-          src="/emojis/pointright.png"
+          src={Finger}
           width={20}
           height={20}
           alt="pointright"

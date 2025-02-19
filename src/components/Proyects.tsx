@@ -2,6 +2,11 @@ import Image from "next/image";
 import SectionHeader from "./SectionHeader";
 import { FiGithub } from "react-icons/fi";
 import InternetIcon from "./InternetIcon";
+import Brayton from "../../public/brayton.png";
+import Carwash from "../../public/carwash.jpg";
+import Diodos from "../../public/diodos.png";
+import Hotel from "../../public/hotel.png";
+import Cafeteria from "../../public/cafeteria.webp";
 
 interface Project {
   titulo: string;
@@ -63,7 +68,7 @@ function Proyects({
         </div>
         <div className="relative flex-shrink-0 w-full max-w-sm lg:max-w-lg cursor-pointer">
           <Image
-            src="/cafeteria.webp"
+            src={Cafeteria}
             width={550}
             height={350}
             alt="Hotel"
@@ -75,7 +80,7 @@ function Proyects({
       <div className="border-b-2 border-t-2 rounded-md md:border-0 border-primary-dark dark:border-primary-ligth relative w-full px-7 sm:px-2 py-10 flex flex-col md:flex-row justify-around items-center gap-8 lg:gap-20">
         <div className="relative flex-shrink-0 w-full max-w-sm lg:max-w-lg cursor-pointer">
           <Image
-            src="/hotel.png"
+            src={Hotel}
             width={550}
             height={350}
             alt="Hotel"
@@ -143,7 +148,7 @@ function Proyects({
         </div>
         <div className="relative flex-shrink-0 w-full max-w-sm lg:max-w-lg cursor-pointer">
           <Image
-            src="/diodos.png"
+            src={Diodos}
             width={550}
             height={350}
             alt="Hotel"
@@ -155,7 +160,7 @@ function Proyects({
       <div className="border-b-2 border-t-2 rounded-md md:border-0 border-primary-dark dark:border-primary-ligth relative w-full px-7 sm:px-2 py-10 flex flex-col md:flex-row justify-around items-center gap-8 lg:gap-20">
         <div className="relative flex-shrink-0 w-full max-w-sm lg:max-w-lg cursor-pointer">
           <Image
-            src="/carwash.jpg"
+            src={Carwash}
             width={550}
             height={300}
             alt="Hotel"
@@ -223,7 +228,7 @@ function Proyects({
         </div>
         <div className="relative flex-shrink-0 w-full max-w-sm lg:max-w-lg cursor-pointer">
           <Image
-            src="/brayton.png"
+            src={Brayton}
             width={550}
             height={350}
             alt="Hotel"
