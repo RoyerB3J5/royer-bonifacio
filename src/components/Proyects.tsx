@@ -2,10 +2,10 @@ import Image from "next/image";
 import SectionHeader from "./SectionHeader";
 import { FiGithub } from "react-icons/fi";
 import InternetIcon from "./InternetIcon";
-import Brayton from "../../public/brayton.png";
-import Carwash from "../../public/carwash.jpg";
-import Diodos from "../../public/diodos.png";
-import Hotel from "../../public/hotel.png";
+import Brayton from "../../public/brayton.webp";
+import Carwash from "../../public/carwash.webp";
+import Diodos from "../../public/diodos.webp";
+import Hotel from "../../public/hotel.webp";
 import Cafeteria from "../../public/cafeteria.webp";
 
 interface Project {
@@ -73,6 +73,7 @@ function Proyects({
             height={350}
             alt="Hotel"
             className="w-full h-auto rounded-md"
+            priority={false}
           />
           <div className="absolute inset-0 bg-primary-dark opacity-50 hover:opacity-0 transition-opacity duration-300 rounded-md"></div>
         </div>
@@ -85,6 +86,7 @@ function Proyects({
             height={350}
             alt="Hotel"
             className="w-full h-auto rounded-md"
+            priority={false}
           />
           <div className="absolute inset-0 bg-primary-dark dark:bg-primary-ligth opacity-50 hover:opacity-0 transition-opacity duration-300 rounded-md"></div>
         </div>
@@ -153,6 +155,7 @@ function Proyects({
             height={350}
             alt="Hotel"
             className="w-full h-auto rounded-md"
+            priority={false}
           />
           <div className="absolute inset-0 bg-primary-dark opacity-50 hover:opacity-0 transition-opacity duration-300 rounded-md"></div>
         </div>
@@ -165,6 +168,7 @@ function Proyects({
             height={300}
             alt="Hotel"
             className="w-full h-auto rounded-md"
+            priority={false}
           />
           <div className="absolute inset-0 bg-primary-dark opacity-50 hover:opacity-0 transition-opacity duration-300 rounded-md"></div>
         </div>
@@ -233,6 +237,7 @@ function Proyects({
             height={350}
             alt="Hotel"
             className="w-full h-auto rounded-md"
+            priority={false}
           />
           <div className="absolute inset-0 bg-primary-dark opacity-50 hover:opacity-0 transition-opacity duration-300 rounded-md"></div>
         </div>

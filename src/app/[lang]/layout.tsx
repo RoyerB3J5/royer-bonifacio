@@ -10,10 +10,12 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display:"swap"
 });
 const firaCode = Fira_Code({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
+  display:"swap"
 });
 export const metadata: Metadata = {
   title: "Royer Bonifacio - Desarrollador frontend",
