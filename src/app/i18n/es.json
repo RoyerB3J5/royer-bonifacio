@@ -29,6 +29,10 @@
   },
   "projects":{
     "titulo":"proyectos",
+    "tienda":{
+      "titulo":"Tienda de Ropa",
+      "parr": "Ecommerce intuitivo que puede impulsar tu negocio, llegano a más clientes. Aplica filtros, añade productos al carrito y realiza el checkout."
+    },
     "cafeteria":{
       "titulo":"Cafetería - Landing Page",
       "parr": "Diseñé una landing page atractiva y moderna para una cafetería, destacando su ambiente acogedor y menú artesanal, optimizada para dispositivos móviles."

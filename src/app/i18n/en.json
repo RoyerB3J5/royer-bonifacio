@@ -28,6 +28,10 @@
   },
   "projects": {
     "titulo": "projects",
+    "tienda":{
+      "titulo":"Ecommerce - Clothes",
+      "parr": "Intuitive ecommerce that can boost your business by reaching more customers. Apply filters, add products to the cart and checkout."
+    },
     "cafeteria": {
       "titulo": "Cafeteria - Landing Page",
       "parr": "I designed an attractive and modern landing page for a cafeteria, highlighting its cozy atmosphere and artisanal menu, optimized for mobile devices."

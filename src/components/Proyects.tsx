@@ -7,6 +7,7 @@ import Carwash from "../../public/carwash.webp";
 import Diodos from "../../public/diodos.webp";
 import Hotel from "../../public/hotel.webp";
 import Cafeteria from "../../public/cafeteria.webp";
+import Clothing from "../../public/clothing.webp";
 
 interface Project {
   titulo: string;
@@ -15,6 +16,7 @@ interface Project {
 
 interface Projects {
   titulo: string;
+  tienda: Project;
   cafeteria: Project;
   hotel: Project;
   diodos: Project;
@@ -34,6 +36,47 @@ function Proyects({
     >
       <div className="w-full lg:w-1/2 flex  flex-col items-center gap-6 ">
         <SectionHeader titulo={t.titulo} />
+      </div>
+      <div className="border-b-2 border-t-2 rounded-md md:border-0 border-primary-dark dark:border-primary-ligth relative w-full px-7 sm:px-2 py-10 flex flex-col md:flex-row justify-around items-center gap-8 lg:gap-20">
+        <div className="relative flex-shrink-0 w-full max-w-sm lg:max-w-lg cursor-pointer">
+          <Image
+            src={Clothing}
+            width={550}
+            height={350}
+            alt="Shop"
+            className="w-full h-auto rounded-md"
+            priority={false}
+          />
+          <div className="absolute inset-0 bg-primary-dark dark:bg-primary-ligth opacity-50 hover:opacity-0 transition-opacity duration-300 rounded-md"></div>
+        </div>
+        <div className="flex flex-col justify-center items-end relative z-20 gap-6 w-full md:w-auto">
+          <h3 className="text-[1.4rem] font-medium hover:text-primary-dark hover:dark:text-primary-ligth cursor-pointer transition-all">
+            {t.tienda.titulo}
+          </h3>
+          <div className="shadow-sm shadow-primary-dark dark:shadow-primary-ligth py-4 px-4 md:w-[400px] text-end rounded-md w-full">
+            <p>
+              {t.tienda.parr}
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center items-end gap-4">
+            <ul className="flex justify-center items-center gap-6 text-[12px]">
+              <li>NextJS</li>
+              <li>RapidApi</li>
+              <li>TailwindCSS</li>
+            </ul>
+            <a href="https://github.com/RoyerB3J5/clothing-shop">
+              <FiGithub
+                className="size-6 
+                      hover:text-primary-dark hover:dark:text-primary-ligth  cursor-pointer hover:-translate-y-1 transition-all "
+                strokeWidth={2}
+              />
+            </a>
+            <a href="https://clothing-shop-sepia.vercel.app/">
+                <InternetIcon />
+              </a>
+          </div>
+        </div>
       </div>
       <div className="border-b-2 border-t-2 rounded-md md:border-0 border-primary-dark dark:border-primary-ligth relative w-full px-7 sm:px-2 py-10 flex flex-col md:flex-row justify-around items-center gap-8 lg:gap-20">
         <div className="flex flex-col justify-center items-start relative z-20 gap-6 w-full md:w-auto">
