@@ -14,8 +14,10 @@ export default async function Init({
 }) {
   const resolvedParams = await params;
   const { lang } = resolvedParams;
-  const t = (await getDictionary(lang))!;
-
+  const t = await getDictionary(lang);
+  if (!t){
+    return <div>Diccionario ha sido obtenido correctamente</div>
+  }
   return (
     <main className="w-screen px-6 lg:px-24">
       <Home t={t.home} />
