@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import SectionHeader from "./SectionHeader";
 import IconContacts from "./IconContacts";
-import { div } from "framer-motion/client";
 
 interface ContactErrors {
   email: {

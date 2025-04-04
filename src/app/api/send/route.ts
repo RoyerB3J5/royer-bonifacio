@@ -15,7 +15,7 @@ export async function POST(req : Request) {
       return Response.json({error},{status:500})
     }
     return Response.json(data)
-  }catch (error){
+  }catch {
     return Response.json({error: 'Error al enviar el correo'}, {status:500})
   }
 }
