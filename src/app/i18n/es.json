@@ -54,11 +54,36 @@
       "parr": "Pagina que permite calcular parametros de salida en un ciclo de brayton, asi mismo como obtener sus graficas de comportamiento."
     }
   },
+  "contact" : {
+    "title" : "contáctame",
+    "label1":"Ingresa tu correo",
+    "label3":"Asunto",
+    "label2":"Mensaje",
+    "caracter": "Mín caracteres : 10",
+    "button" : {
+      "label1": "Límite alcanzado",
+      "label2": "Enviar"
+    },
+    "errors":{
+      "email": {
+        "required" : "El correo es requerido",
+        "invalid": "El correo no es valido"
+      },
+      "message": {
+        "required" : "El mensaje es requerido",
+        "invalid": "El mensaje no es valido"
+      },
+      "asunto": {
+        "required" : "El asunto es requerido",
+        "invalid": "El asunto no es valido. Min 3 caracteres"
+      }
+    }
+  },
   "header":{
     "sobremi":"sobre mi",
     "experiencia": "experiencia",
     "proyectos":"proyectos",
-    "contacto":"contactos"
+    "contacto":"contactame"
   }
 
 }
