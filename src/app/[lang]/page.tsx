@@ -14,7 +14,8 @@ export default async function Init({
 }) {
   const resolvedParams = await params;
   const { lang } = resolvedParams;
-  const t = await getDictionary(lang);
+  const t = (await getDictionary(lang))!;
+
   return (
     <main className="w-screen px-6 lg:px-24">
       <Home t={t.home} />
@@ -25,7 +26,7 @@ export default async function Init({
       <div className="hidden lg:block">
         <Contacts />
       </div>
-      <SendEmail t = {t.contact}/>
+      <SendEmail t={t.contact} />
     </main>
   );
 }
