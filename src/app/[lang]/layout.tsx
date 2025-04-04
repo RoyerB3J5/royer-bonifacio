@@ -33,10 +33,6 @@ export default async function RootLayout({
   const { lang } = resolvedParams;
   return (
     <html lang={lang} className=" scroll-smooth">
-      <head>
-        <link rel="preload" href="/dictionaries/en.json" as="fetch" />
-        <link rel="preload" href="/dictionaries/es.json" as="fetch" />
-      </head>
       <body
         className={`${firaCode.className} ${geistMono.variable} antialiased  relative overflow-x-hidden`}
       >

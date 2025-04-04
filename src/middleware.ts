@@ -20,17 +20,25 @@ function getLocale(request: NextRequest): string {
 
 export async function middleware(request: NextRequest) {
 
-  const localeCookie = request.cookies.get("locale")
+  const { pathname } = request.nextUrl;
+  const localeCookie = request.cookies.get("locale");
 
-  if (localeCookie?.value && locales.includes(localeCookie.value)) {
-    return
+  if (
+    pathname.startsWith("/_next/") ||
+    pathname.includes(".") // Archivos como .js, .css, etc.
+  ) {
+    return NextResponse.next();
   }
 
-  const locale = getLocale(request);
+  // Redirección solo para la raíz
+  if (pathname === "/") {
+    const locale = localeCookie?.value || getLocale(request);
+    const response = NextResponse.redirect(new URL(`/${locale}`, request.url));
+    response.cookies.set("locale", locale, { maxAge: 60 * 60 * 24 * 365 });
+    return response;
+  }
 
-  const response = NextResponse.redirect(request.nextUrl)
-  response.cookies.set("locale", locale, {maxAge: 60 *60 * 2})
-  return response
+  return NextResponse.next();
 }
 
 export const config = {

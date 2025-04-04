@@ -1,0 +1,1 @@
+export type Dictionary = typeof import("@/app/i18n/en.json")
