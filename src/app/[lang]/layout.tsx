@@ -5,17 +5,17 @@ import { Providers } from "./providers";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-  display:"swap"
+  display: "swap",
 });
 const firaCode = Fira_Code({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
-  display:"swap"
+  display: "swap",
 });
 export const metadata: Metadata = {
   title: "Royer Bonifacio - Desarrollador frontend",
@@ -24,20 +24,24 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: "en" | "es" }>
+  params: Promise<{ lang: "en" | "es" }>;
 }>) {
   const resolvedParams = await params;
   const { lang } = resolvedParams;
   return (
     <html lang={lang} className=" scroll-smooth">
+      <head>
+        <link rel="preload" href="/dictionaries/en.json" as="fetch" />
+        <link rel="preload" href="/dictionaries/es.json" as="fetch" />
+      </head>
       <body
         className={`${firaCode.className} ${geistMono.variable} antialiased  relative overflow-x-hidden`}
       >
         <Providers>
-          <Header params={{lang}}/>
+          <Header params={{ lang }} />
           {children}
           <Analytics />
           <SpeedInsights />

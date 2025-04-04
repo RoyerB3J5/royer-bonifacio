@@ -19,19 +19,21 @@ function getLocale(request: NextRequest): string {
 }
 
 export async function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
 
-  if (pathnameHasLocale) return;
+  const localeCookie = request.cookies.get("locale")
+
+  if (localeCookie?.value && locales.includes(localeCookie.value)) {
+    return
+  }
 
   const locale = getLocale(request);
 
-  request.nextUrl.pathname = `/${locale}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
+  const response = NextResponse.redirect(request.nextUrl)
+  response.cookies.set("locale", locale, {maxAge: 60 *60 * 2})
+  return response
 }
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico).*)']
+  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico).*)'],
+  runtime: "edge"
 };
