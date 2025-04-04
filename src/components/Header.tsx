@@ -9,7 +9,9 @@ interface HeaderProps {
 
 async function Header({ params }: HeaderProps) {
   const t = await getDictionary(params.lang);
-
+  if (!t){
+    return <div>Diccionario ha sido obtenido correctamente</div>
+  }
   return (
     <ClientHeader
       t={t.header}
