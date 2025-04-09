@@ -20,11 +20,22 @@
   },
   "experience": {
     "titulo": "experience",
-    "parr1": "January 2024 - Present",
-    "parr2": "Development of management systems for car washes and hotels, optimizing operations and improving user experience with easy-to-use interfaces.",
-    "parr3": "Dynamic web pages presented at the university, using to offer modern and scalable solutions.",
-    "parr4": "Backend integration to implement database functionalities, user authentication, and connection with external APIs.",
-    "parr5": "Design of database schemas to store customer information, reservations, and services, and handling basic queries."
+    "item1": {
+      "title": "FullStack Developer - Volunteer",
+      "parr1": "March 2025 - Present",
+      "parr2": "Development of digital tools with social impact using React and Vue.js for frontend, and Laravel for backend, creating technological solutions adapted to specific community needs.",
+      "parr3": "Design of accessible interfaces with Bootstrap and modern CSS frameworks, implementing functionalities that address specific social issues in resource-limited environments.",
+      "parr4": "Implementation of authentication systems and databases with Laravel and MySQL for applications focused on digital inclusion and equitable access to technological services.",
+      "parr5": "Application of web accessibility standards and responsive design to ensure developed solutions reach diverse communities, regardless of their devices or technical capabilities."
+    },
+    "item2": {
+      "title": "Freelancer",
+      "parr1": "January 2024 - Present",
+      "parr2": "Development of management systems for car washes and hotels, optimizing operations and improving user experience with easy-to-use interfaces.",
+      "parr3": "Dynamic web pages presented at the university, using to offer modern and scalable solutions.",
+      "parr4": "Backend integration to implement database functionalities, user authentication, and connection with external APIs.",
+      "parr5": "Design of database schemas to store customer information, reservations, and services, and handling basic queries."
+    }
   },
   "projects": {
     "titulo": "projects",
@@ -57,7 +68,7 @@
     "title": "contact me",
     "label1": "Enter your email",
     "label2": "Message",
-    "label3":"Subject",
+    "label3": "Subject",
     "caracter": "Min characters: 10",
     "button": {
       "label1": "Limit reached",
@@ -73,7 +84,7 @@
         "invalid": "Invalid message"
       },
       "asunto": {
-        "required" : "Subject is required",
+        "required": "Subject is required",
         "invalid": "Invalid subject. Min 3 characters"
       }
     }
